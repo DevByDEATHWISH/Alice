@@ -1,6 +1,6 @@
 import datetime
 import config
-import response
+import character
 import google.generativeai as genai
 
 api_key = config.GOOGLE_API_KEY
@@ -18,11 +18,11 @@ chat = model.start_chat(history=[])
 
 
 def startup():
-    message = response.character
+    message = character.character
     print(message)
     try:
         output = chat.send_message(message, safety_settings=safety_settings)
-        response.answer = output.text
+        character.answer = output.text
     except Exception as e:
         print(f"An error occurred: {e}, trying again.")
         startup()
@@ -30,15 +30,15 @@ def startup():
 startup()
 
 
-def get_response():
-    response.timestamp = " ["+str(datetime.datetime.now())+"]"
-    message = response.input + response.timestamp
+def get_character():
+    character.timestamp = " ["+str(datetime.datetime.now())+"]"
+    message = character.input + character.timestamp
     print(message)
     try:
         output = chat.send_message(message, safety_settings=safety_settings)
-        response.answer = output.text
-        print(response.answer)
+        character.answer = output.text
+        print(character.answer)
     except Exception as e:
         print(f"An error occurred: {e}")
-        response.answer = "Desculpe, encontrei um erro, poderia repetir por favor?"
-    return response.answer
+        character.answer = "Desculpe, encontrei um erro, poderia repetir por favor?"
+    return character.answer
