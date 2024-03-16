@@ -12,7 +12,8 @@ This repository contains a Python script for a simple chatbot powered by Google'
 
 ### Example Interaction
 
-You: Hello, how are you?\n
+You: Hello, how are you?
+
 Gemini: I am an AI language model, so I don't have feelings like humans do. However, I am here to assist you with any questions or tasks you may have.
 
 ### Note
