@@ -1,7 +1,7 @@
 import discord
 import config
 import alice
-import response
+import character
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
@@ -18,7 +18,7 @@ async def on_message(message):
     if client.user in message.mentions:
         async with message.channel.typing():
             user_message = f"{message.author.name}: {message.content}"
-            response.input = user_message
+            character.input = user_message
 
         await message.reply(alice.get_response())
 
