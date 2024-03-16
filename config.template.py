@@ -1,2 +1,2 @@
-TOKEN = 'Your discord token here'
-GOOGLE_API_KEY = 'Your google API key here'
+TOKEN = 'Your Discord token here'
+GOOGLE_API_KEY = 'Your Google API key here'
