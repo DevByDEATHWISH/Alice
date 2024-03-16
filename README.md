@@ -9,12 +9,7 @@ This repository contains a Python script for a simple chatbot powered by Google'
 3. Replace the placeholder API key in `config.py` with your actual Gemini API key.
 4. Replace the placeholder TOKEN in `config.py` with your Discord bot token.
 5. Run the script `main.py` to start the chatbot.
-
-### Example Interaction
-
-You: Hello, how are you?
-
-Gemini: I am an AI language model, so I don't have feelings like humans do. However, I am here to assist you with any questions or tasks you may have.
+6. If you want to give custom instructions to Gemini, modify the `character` variable in `response.py`
 
 ### Note
 
