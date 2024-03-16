@@ -6,7 +6,7 @@ This repository contains a Python script for a simple chatbot powered by Google'
 
 1. Clone or download this repository;
 2. Install the required dependencies: `pip install google-generativeai`, `pip install discord.py`;
-3. Create the file `config.py` in the main directory with the variables 'TOKEN' and 'GOOGLE_API_KEY';
+3. Rename `config.template.py` to `config.py`
 5. In `config.py`, paste in "GOOGLE_API_KEY" your Gemini API key;
 6. In `config.py`, paste in "TOKEN" your Discord bot token;
 7. Run the script `main.py` to start the chatbot;
